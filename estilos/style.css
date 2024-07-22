@@ -104,7 +104,7 @@ footer > .copyright
     padding: 10px;
 }
 
-@media screen and (min-width: 428px) and (max-width: 768px){
+@media screen and (min-width: 428px) and (max-width: 767px){
     
     main > .container{
         width: 90%;
@@ -120,12 +120,13 @@ footer > .copyright
         height: 50%;
         padding: 10px 0px;
         margin-top: 10px;
+        background-color: rgb(0, 255, 4);
     }
 
     main > .container > .card > picture > img{
         display: block;
-        width: 200px;
-        height: 180px;
+        width: 95%;
+        height: 25vh;
         margin: auto;
     }
 
@@ -138,7 +139,7 @@ footer > .copyright
     
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px){
+@media screen and (min-width: 768px) and (max-width: 899px){
     
     main > .container{
         width: 90%;
@@ -154,12 +155,13 @@ footer > .copyright
         height: 50%;
         padding: 10px 0px;
         margin-top: 10px;
+        background-color: red;
     }
 
     main > .container > .card > picture > img{
         display: block;
-        width: 328px;
-        height: 218px;
+        width: 95%;
+        height: 30vh;
         margin: auto;
     }
 
@@ -193,8 +195,8 @@ footer > .copyright
 
     main > .container > .card > picture > img{
         display: block;
-        width: 480px;
-        height: 320px;
+        width: 95%;
+        height: 60vh;
         margin: auto;
     }
 

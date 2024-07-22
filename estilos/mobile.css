@@ -1,34 +1,33 @@
 @charset "UTF-8";
 
 /* Media Querie para dispositivos mobile */
-@media screen and (max-width: 428px){
+@media screen and (min-width: 360px) and (max-width: 428px){
     
     main > .container{
-        width: 90%;
+        width: 95%;
         height: 100%;
-        background-color: transparent;
-        margin: auto;
         padding: 10px;
+        margin: auto;
     }
     
     main > .container > .card{
-        display: inline-block;
-        width: 49%;
+        display: block;
+        width: 95%;
         height: 50%;
         padding: 10px 0px;
-        margin-top: 10px;
+        margin: auto;
     }
 
     main > .container > .card > picture > img{
         display: block;
-        width: 180px;
-        height: 120px;
+        width: 95%;
+        height: 260px;
         margin: auto;
     }
 
     main > .container > .card > p{
-        font-size: 87%;
-        padding: 10px;
+        font-size: 25px;
+        padding: 20px;
     }
     
 }
@@ -39,14 +38,24 @@
         font-size: 13px;
     }
 
+    main > .container > .card{
+        display: block;
+        width: 95%;
+        height: 50%;
+        padding: 10px 0px;
+        margin: auto;
+    }
+
     main > .container > .card > picture > img{
-        width: 120px;
-        height: 80px;
+        display: block;
+        width: 90%;
+        height: 220px;
         margin: auto;
     }
 
     main > .container > .card > p{
-        font-size: 70%;
+        font-size: 25px;
+        padding: 20px;
     }
     
 }
@@ -54,8 +63,8 @@
 @media screen and (min-width: 350px) and (max-width: 390px) {
 
     main > .container > .card > picture > img{
-        width: 150px;
-        height: 100px;
+        width: 90%;
+        height: 240px;
         margin: auto;
     }
     
