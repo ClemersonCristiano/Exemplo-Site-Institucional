@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* Media Querie para dispositivos mobile */
+@media screen and (max-width: 428px){
+    
+    main > .container{
+        width: 90%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    main > .container > .card{
+        display: inline-block;
+        width: 49%;
+        height: 50%;
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+
+    main > .container > .card > picture > img{
+        display: block;
+        width: 90%;
+        height: 20vh;
+        margin: auto;
+    }
+
+    main > .container > .card > p{
+        font-size: 87%;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+
+    .Menu-Header{
+        font-size: 13px;
+    }
+
+    main > .container > .card > p{
+        font-size: 70%;
+    }
+    
+}
