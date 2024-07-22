@@ -104,7 +104,7 @@ footer > .copyright
     padding: 10px;
 }
 
-@media screen and (min-width: 428px) and (max-width: 900px){
+@media screen and (min-width: 428px) and (max-width: 768px){
     
     main > .container{
         width: 90%;
@@ -116,7 +116,7 @@ footer > .copyright
     
     main > .container > .card{
         display: inline-block;
-        width: 49%;
+        width: 48%;
         height: 50%;
         padding: 10px 0px;
         margin-top: 10px;
@@ -124,15 +124,49 @@ footer > .copyright
 
     main > .container > .card > picture > img{
         display: block;
-        width: 330px;
-        height: 220px;
+        width: 200px;
+        height: 180px;
         margin: auto;
     }
 
     main > .container > .card > p{
         font-size: 24px;
         padding: 10px;
-        width: 330px;
+        width: 90%;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+    
+    main > .container{
+        width: 90%;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    main > .container > .card{
+        display: inline-block;
+        width: 48%;
+        height: 50%;
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+
+    main > .container > .card > picture > img{
+        display: block;
+        width: 328px;
+        height: 218px;
+        margin: auto;
+    }
+
+    main > .container > .card > p{
+        font-size: 24px;
+        padding: 10px;
+        width: 328px;
         margin: auto;
     }
     
