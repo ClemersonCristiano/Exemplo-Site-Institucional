@@ -18,67 +18,136 @@
         font-size: 13px;
     }
 
-    main > .container > .card{
-        display: block;
-        width: 95%;
-        height: 50%;
-        padding: 10px 0px;
-        margin: auto;
-    }
-
     main > .container > .card > picture > img{
-        display: block;
-        width: 90%;
-        height: 220px;
-        margin: auto;
+        width: 290px;
+        height: 240px;
     }
 
     main > .container > .card > h1{
         font-size: 24px;
         width: 90%;
         padding: 10px 15px;
+        text-align: center;
+    }
+
+    main > .container > .card > h2{
+        font-size: 26px;
+        width: 90%;
+        padding: 10px 10px;
     }
 
     main > .container > .card > p{
-        font-size: 25px;
+        font-size: 14px;
         padding: 20px 20px;
+    }
+    
+    main > .container > .card > .container-app > img{
+        height: 280px;
+    }
+
+    main > .container > .card > picture > a > img{
+        width: 140px;
     }
     
 }
 
 @media screen and (min-width: 360px) and (max-width: 430px){
-    
-    main > .container{
-        width: 95%;
-        height: 100%;
-        padding: 10px;
-        margin: auto;
-    }
-    
-    main > .container > .card{
-        display: block;
-        width: 95%;
-        height: 50%;
-        padding: 10px 0px;
-        margin: auto;
-    }
 
     main > .container > .card > picture > img{
-        display: block;
-        width: 95%;
-        height: 260px;
-        margin: auto;
+        width: 335px;
+        height: 280px;
     }
 
     main > .container > .card > h1{
-        font-size: 32px;
+        font-size: 29px;
         width: 90%;
-        padding: 10px 7px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    main > .container > .card > h2{
+        font-size: 20px;
+        width: 90%;
     }
 
     main > .container > .card > p{
-        font-size: 25px;
+        font-size: 16px;
         padding: 20px 10px;
     }
-    
+
+    main > .container > .card > .container-app > img{
+        height: 320px;
+    }
+
+    main > .container > .card > picture > a > img{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px){
+
+    main > .container > .card > picture > img{
+        width: 450px;
+        height: 380px;
+    }
+
+    main > .container > .card > h1{
+        font-size: 48px;
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    main > .container > .card > h2{
+        font-size: 32px;
+    }
+
+    main > .container > .card > p{
+        font-size: 18px;
+        padding: 10px 15px;
+        width: 90%;
+    }
+
+    main > .container > .card > .container-app > img{
+        width: 360px;
+        height: 420px;
+    }
+
+    main > .container > .card > picture > a > img{
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+
+    main > .container > .card > picture > img{
+        width: 510px;
+        height: 420px;
+    }
+
+    main > .container > .card > h1{
+        font-size: 52px;
+        width: 90%;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    main > .container > .card > h2{
+        font-size: 32px;
+    }
+
+    main > .container > .card > p{
+        font-size: 18px;
+        padding: 10px 15px;
+        width: 95%;
+    }
+
+    main > .container > .card > .container-app > img{
+        width: 320px;
+        height: 760px;
+    }
+
+    main > .container > .card > picture > a > img{
+        width: 240px;
+    }
 }
