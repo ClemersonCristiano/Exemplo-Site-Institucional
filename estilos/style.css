@@ -8,8 +8,9 @@
 }
 
 :root{
-    --corBase: #000;
     --corSecundaria: #149AF3;
+    --corFundo: #053471;
+    --corBase: #00142d;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
 header{
     background-color: var(--corBase);
     width: 100%;
-    height: 137px;
+    height: 136px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -78,10 +79,75 @@ main{
     width: 100%;
 }
 
+.logo_buspass{
+    filter: drop-shadow(0px 0px 5px var(--corSecundaria));}
+
+main > .container{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+main > .container > .card{
+    display: block;
+    width: 95%;
+    height: 50%;
+    padding: 10px 0px;
+    margin: auto;
+}
+
+main > .container > .card > picture > img, 
+main#sobre > .container > .card > picture > img{
+    display: block;
+    margin: auto;
+}
+
+main > .container > .card > h1, main > .container > .card > h2{
+    margin-top: 10px;
+}
+
+main > .container > .card > p{
+    text-indent: 30px;
+    background-color: var(--corFundo);
+    border-radius: 20px;
+    margin: 10px 0px;
+}
+
+main > .container > .card > picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+main > .container > .card > picture > a{
+    text-decoration: none;
+}
+
+main > .container > .card > picture > a > img{
+    width: 180px;
+}
+
+main > .container > .card > .container-app{
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+main > .container > .card > .container-app > img{
+    display: block;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: auto;
+}
+
 footer{
     background-color: var(--corBase);
     width: 100%;
-    height: 210px;
+    height: 190px;
 }
 
 footer > section{
@@ -91,8 +157,8 @@ footer > section{
 footer > section > h1{
     text-align: center;
     font-size: 50px;
-    width: 250px;
-    padding-top: 10px;
+    width: 230px;
+    padding: 10px 0px;
 }
 
 footer > section > p{
@@ -103,9 +169,11 @@ footer > section > p{
 
 footer > .copyright
 {
-    background-color: var(--corBase);
+    background-color: var(--corFundo);
     text-align: center;
     padding: 10px;
+    height: 20px;
+    margin-top: 35px;
 }
 
 footer > .copyright > a
@@ -118,142 +186,94 @@ footer > .copyright > a:hover
     text-decoration: underline;
 }
 
-@media screen and (min-width: 428px) and (max-width: 768px){
-    
-    main > .container{
-        width: 90%;
+/* Responsividade para telas grandes */
+@media screen and (min-width: 901px) {
+
+    main#index > .container{
+        display: flex;
+        width: 95%;
         height: 100%;
-        margin: auto;
-        padding: 10px;
     }
-    
-    main > .container > .card{
-        display: block;
-        width: 95%;
-        height: 50%;
+
+    main#index > .container > .card{
+        flex-grow: 1;
         padding: 10px 0px;
-        margin-top: 10px;
-        margin: auto;
+        margin: 0px 5px;
     }
-
-    main > .container > .card > picture > img{
-        display: block;
-        width: 95%;
-        height: 50%;
-        margin: auto;
-    }
-
-    main > .container > .card > h1{
-        font-size: 32px;
-        width: 90%;
-        padding: 10px;
-    }
-
-    main > .container > .card > p{
-        font-size: 80%;
-        padding: 10px 15px;
-        width: 90%;
-    }
-    
 }
 
-@media screen and (min-width: 768px) and (max-width: 899px){
-    
-    main > .container{
-        width: 90%;
-        height: 100%;
-        margin: auto;
-        padding: 10px;
-    }
-    
-    main > .container > .card{
-        display: block;
-        width: 95%;
-        height: 50%;
-        padding: 10px 0px;
-        margin-top: 10px;
-        margin: auto;
-        background-color: aqua;
-    }
+@media screen and (min-width: 900px) and (max-width: 1200px){
 
     main > .container > .card > picture > img{
-        display: block;
-        width: 95%;
-        height: 50%;
-        margin: auto;
+        width: 410px;
+        height: 320px;
     }
 
     main > .container > .card > h1{
-        font-size: 32px;
-        width: 90%;
-        padding: 10px 15px;
-    }
-
-    main > .container > .card > p{
-        font-size: 24px;
-        padding: 10px 15px;
-        width: 328px;
-    }
-    
-}
-
-@media screen and (min-width: 900px){
-    
-    main > .container{
-        width: 90%;
-        height: 100%;
-        margin: auto;
-        padding: 10px;
-    }
-    
-    main > .container > .card{
-        display: inline-block;
-        width: 49%;
-        height: 50%;
-        padding: 10px 0px;
-        margin-top: 10px;
-        background-color: blue;
-    }
-
-    main > .container > .card > picture > img{
-        display: block;
-        width: 95%;
-        height: 50vh;
-        margin: auto;
-    }
-
-    main > .container > .card > h1{
-        font-size: 32px;
+        font-size: 35px;
         padding: 10px 10px;
         width: 90%;
+        text-align: center;
+    }
+
+    main > .container > .card > h2{
+        font-size: 42px;
     }
 
     main > .container > .card > p{
         font-size: 24px;
         padding: 10px ;
-        width: 380px;
+        width: 90%;
     }
-    
+
+    main > .container > .card > .container-app > img{
+        width: 180px;
+        height: 380px;
+    }
 }
 
 @media screen and (min-width: 1200px){
 
     main > .container > .card > picture > img{
-        display: block;
-        width: 95%;
+        width: 510px;
         height: 420px;
-        margin: auto;
     }
 
     main > .container > .card > h1{
-        font-size: 32px;
+        font-size: 55px;
         padding: 10px 15px;
         width: 90%;
+        text-align: center;
+    }
+
+    main > .container > .card > h2{
+        font-size: 52px;
     }
 
     main > .container > .card > p{
+        font-size: 26px;
         padding: 10px 15px;
         margin: 0;
     }
+
+    main > .container > .card > .container-app > img{
+        width: 280px;
+        height: 600px;
+    }
     
+}
+
+@media screen and (min-width: 900px) {
+
+    main#sobre > .container > .card{
+        display: block;
+        width: 95%;
+        height: 50%;
+        padding: 10px 0px;
+    }
+
+    main#sobre > .container > .card > picture > img{
+        width: 620px;
+        height: 580px;
+    }
 }
