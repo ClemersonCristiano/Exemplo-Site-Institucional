@@ -144,6 +144,22 @@ main > .container > .card > .container-app > img{
     margin: auto;
 }
 
+main#contatos > .container > .card > .redes-sociais > li {
+    background-color: var(--corFundo);
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+main#contatos > .container > .card > .redes-sociais > li:hover {
+    background-color: var(--corSecundaria);
+}
+
+main#contatos > .container > .card > .redes-sociais > li > a {
+    text-decoration: none;
+}
+
 footer{
     background-color: var(--corBase);
     width: 100%;
@@ -253,7 +269,7 @@ footer > .copyright > a:hover
     main > .container > .card > p{
         font-size: 26px;
         padding: 10px 15px;
-        margin: 0;
+        margin: 20px 0px;
     }
 
     main > .container > .card > .container-app > img{
