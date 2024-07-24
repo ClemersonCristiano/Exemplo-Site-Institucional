@@ -160,6 +160,49 @@ main#contatos > .container > .card > .redes-sociais > li > a {
     text-decoration: none;
 }
 
+main#cadastro > .container > .card > .form-cadastro{
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #053471;
+    border-radius: 20px;
+}
+
+main#cadastro > .container > .card > .form-cadastro > .campo-form{
+    padding: 10px;
+    margin: 10px 0px;
+    width: 90%;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main#cadastro > .container > .card > .form-cadastro > .campo-form > input{
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    padding-left: 5px;
+    color: black;
+}
+
+main#cadastro > .container > .card > .form-cadastro > .botão-enviar{
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+main#cadastro > .container > .card > .form-cadastro > .botão-enviar:hover{
+    background-color: var(--corBase);
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
 footer{
     background-color: var(--corBase);
     width: 100%;
