@@ -66,8 +66,9 @@
     }
 
     main > .container > .card > h2{
-        font-size: 28px;
         width: 90%;
+        font-size: 34px;
+        margin: 20px 0px;
     }
 
     main > .container > .card > p{
@@ -133,13 +134,14 @@
     }
 
     main > .container > .card > h2{
-        font-size: 32px;
+        font-size: 38px;
     }
 
     main > .container > .card > p{
-        font-size: 18px;
-        padding: 10px 15px;
         width: 95%;
+        font-size: 18px;
+        margin: 20px 0px;
+        padding: 10px 15px;
     }
 
     main > .container > .card > .container-app > img{
