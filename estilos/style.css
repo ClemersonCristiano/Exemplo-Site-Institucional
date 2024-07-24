@@ -153,11 +153,15 @@ main#contatos > .container > .card > .redes-sociais > li {
 }
 
 main#contatos > .container > .card > .redes-sociais > li:hover {
-    background-color: var(--corSecundaria);
+    background-color: var(--corBase);
 }
 
 main#contatos > .container > .card > .redes-sociais > li > a {
     text-decoration: none;
+}
+
+main#contatos > .container > .card > .redes-sociais > li > a:hover {
+    text-decoration: underline;
 }
 
 main#cadastro > .container > .card > .form-cadastro{
