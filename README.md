@@ -1,4 +1,4 @@
-Exemplo de site institucional feito em HTML e CSS, responsivo.
+Exemplo de site institucional para uma empresa fictícia feito em HTML e CSS, responsivo.
 
 Feito por Clemerson Cristiano, discente de Sistemas de informação na UFOPA.
 
