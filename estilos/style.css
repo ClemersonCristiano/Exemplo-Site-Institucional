@@ -260,7 +260,7 @@ footer > .copyright > a:hover
 
     main#index > .container > .card{
         flex-grow: 1;
-        padding: 10px 0px;
+        padding: 10px;
         margin: 0px 5px;
     }
 }
