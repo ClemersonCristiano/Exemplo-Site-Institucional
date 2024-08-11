@@ -21,7 +21,6 @@ body{
 header{
     background-color: var(--corBase);
     width: 100%;
-    height: 136px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -31,45 +30,41 @@ header > picture > a > img{
     display: block;
     float: left;
     width: 60px;
-    padding: 10px;
+    padding-top: 38px;
+    padding-left: 5px;
 }
 
 header > h1{
     text-align: center;
-    font-size: 50px;
-    padding: 20px;
+    font-size: 5em;
+    padding: 20px 0px;
     margin: auto;
     width: 300px;
 }
 
-header > h1 > a, footer > section > h1 > a{
+header > h1 > a, 
+footer > section > h1 > a{
     text-decoration: none;
     color: var(--corSecundaria);
     text-shadow: 2px -1px 1px white;
 }
 
 header > .Menu-Header{
-    height: 40px;
-    font-weight: bold;
-}
-
-header > .Menu-Header > ul{
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    align-items: center;
     background-color: var(--corSecundaria);
+    font-weight: 900;
 }
 
-header > .Menu-Header > ul > li{
-    padding: 10px;
-}
-
-header > .Menu-Header > ul > li a{
+header > .Menu-Header > a{
+    flex: auto;
+    text-align: center;
     text-decoration: none;
+    padding: 15px 10px;
     text-shadow: 1px 0px 2px var(--corBase);
 }
 
-header > .Menu-Header > ul > li:hover{
+header > .Menu-Header > a:hover{
     background-color: var(--corBase);
     transition-duration: .9s;
 }
@@ -77,6 +72,7 @@ header > .Menu-Header > ul > li:hover{
 main{
     background-color: var(--corBase);
     width: 100%;
+    padding-top: 20px;
 }
 
 .logo_buspass{
@@ -93,7 +89,7 @@ main > .container > .card{
     width: 95%;
     height: 50%;
     padding: 10px 0px;
-    margin: auto;
+    margin: 0px auto;
 }
 
 main > .container > .card > picture > img, 
@@ -102,15 +98,24 @@ main#sobre > .container > .card > picture > img{
     margin: auto;
 }
 
-main > .container > .card > h1, main > .container > .card > h2{
-    margin-top: 10px;
+main > .container > .card > h1{
+    text-align: center;
+}
+
+main > .container > .card > h1, 
+main > .container > .card > h2{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0px;
 }
 
 main > .container > .card > p{
     text-indent: 30px;
     background-color: var(--corFundo);
     border-radius: 20px;
-    margin: 10px 0px;
+    width: 95%;
+    margin: 20px 0px;
+    padding: 10px 15px;
 }
 
 main > .container > .card > picture{
@@ -130,11 +135,11 @@ main > .container > .card > picture > a > img{
 }
 
 main > .container > .card > .container-app{
-    border-radius: 20px;
     display: flex;
-    padding: 10px;
-    flex-grow: 1;
+    width: 100%;
     gap: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
 }
 
 main > .container > .card > .container-app > img{
@@ -164,7 +169,7 @@ main#contatos > .container > .card > .redes-sociais > li > a:hover {
     text-decoration: underline;
 }
 
-main#cadastro > .container > .card > .form-cadastro{
+main#cadastro > .container > .card > #form-cadastro{
     padding: 10px;
     margin: 20px auto;
     width: 90%;
@@ -172,7 +177,7 @@ main#cadastro > .container > .card > .form-cadastro{
     border-radius: 20px;
 }
 
-main#cadastro > .container > .card > .form-cadastro > .campo-form{
+main#cadastro > .container > .card > #form-cadastro > .campo-form{
     padding: 10px;
     margin: 10px 0px;
     width: 90%;
@@ -181,16 +186,17 @@ main#cadastro > .container > .card > .form-cadastro > .campo-form{
     font-size: 20px;
 }
 
-main#cadastro > .container > .card > .form-cadastro > .campo-form > input{
+main#cadastro > .container > .card > #form-cadastro > .campo-form > input{
     display: block;
     width: 90%;
     height: 30px;
     margin: 10px auto;
     padding-left: 5px;
     color: black;
+    border-radius: 10px;
 }
 
-main#cadastro > .container > .card > .form-cadastro > .botão-enviar{
+main#cadastro > .container > .card > #form-cadastro > .botao-enviar{
     display: block;
     width: 150px;
     height: 40px;
@@ -198,13 +204,15 @@ main#cadastro > .container > .card > .form-cadastro > .botão-enviar{
     color: black;
     font-weight: bold;
     font-size: 25px;
+    border-radius: 10px;
 }
 
-main#cadastro > .container > .card > .form-cadastro > .botão-enviar:hover{
+main#cadastro > .container > .card > #form-cadastro > .botao-enviar:hover{
     background-color: var(--corBase);
     color: #fff;
     border: 0px;
     cursor: pointer;
+    transition: .8s;
 }
 
 footer{
@@ -219,13 +227,12 @@ footer > section{
 
 footer > section > h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 4em;
     width: 230px;
     padding: 10px 0px;
 }
 
 footer > section > p{
-    display: inline-block;
     padding: 10px;
     width: 270px;
 }
@@ -251,7 +258,7 @@ footer > .copyright > a:hover
 
 /* Responsividade para telas grandes */
 @media screen and (min-width: 901px) {
-
+    /* Definindo display flex para telas maiores que 901px */
     main#index > .container{
         display: flex;
         width: 95%;
@@ -259,6 +266,7 @@ footer > .copyright > a:hover
     }
 
     main#index > .container > .card{
+        width: 46%;
         flex-grow: 1;
         padding: 10px;
         margin: 0px 5px;
@@ -274,9 +282,6 @@ footer > .copyright > a:hover
 
     main > .container > .card > h1{
         font-size: 35px;
-        padding: 10px 10px;
-        width: 90%;
-        text-align: center;
     }
 
     main > .container > .card > h2{
@@ -304,9 +309,6 @@ footer > .copyright > a:hover
 
     main > .container > .card > h1{
         font-size: 55px;
-        padding: 10px 15px;
-        width: 90%;
-        text-align: center;
     }
 
     main > .container > .card > h2{
@@ -324,19 +326,4 @@ footer > .copyright > a:hover
         height: 600px;
     }
     
-}
-
-@media screen and (min-width: 900px) {
-
-    main#sobre > .container > .card{
-        display: block;
-        width: 95%;
-        height: 50%;
-        padding: 10px 0px;
-    }
-
-    main#sobre > .container > .card > picture > img{
-        width: 620px;
-        height: 580px;
-    }
 }

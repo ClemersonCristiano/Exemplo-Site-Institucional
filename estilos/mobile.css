@@ -1,44 +1,35 @@
 @charset "UTF-8";
 
 /* Media Querie para dispositivos mobile */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 319px) and (max-width: 360px) {
 
-    header > picture > img{
-        display: block;
-        float: left;
-        width: 60px;
-        padding: 10px;
+    header > picture > a > img{
+        display: none;
     }
 
     header > h1{
-        font-size: 40px;
+        font-size: 4em;
     }
 
     header > .Menu-Header{
-        font-size: 13px;
+        font-size: 10px;
     }
 
     main > .container > .card > picture > img{
-        width: 290px;
+        width: 280px;
         height: 240px;
     }
 
     main > .container > .card > h1{
         font-size: 24px;
-        width: 90%;
-        padding: 10px 15px;
-        text-align: center;
     }
 
     main > .container > .card > h2{
         font-size: 26px;
-        width: 90%;
-        padding: 10px 10px;
     }
 
     main > .container > .card > p{
         font-size: 14px;
-        padding: 20px 20px;
     }
     
     main > .container > .card > .container-app > img{
@@ -51,7 +42,19 @@
     
 }
 
-@media screen and (min-width: 360px) and (max-width: 430px){
+@media screen and (min-width: 360px) and (max-width: 480px){
+
+    header > picture > a > img{
+        display: none;
+    }
+
+    header > h1{
+        font-size: 4em;
+    }
+
+    header > .Menu-Header{
+        font-size: 11px;
+    }
 
     main > .container > .card > picture > img{
         width: 335px;
@@ -60,15 +63,10 @@
 
     main > .container > .card > h1{
         font-size: 29px;
-        width: 90%;
-        padding: 10px 10px;
-        text-align: center;
     }
 
     main > .container > .card > h2{
-        width: 90%;
         font-size: 34px;
-        margin: 20px 0px;
     }
 
     main > .container > .card > p{
@@ -85,7 +83,7 @@
     }
 }
 
-@media screen and (min-width: 430px) and (max-width: 768px){
+@media screen and (min-width: 480px) and (max-width: 768px){
 
     main > .container > .card > picture > img{
         width: 450px;
@@ -94,9 +92,6 @@
 
     main > .container > .card > h1{
         font-size: 48px;
-        width: 90%;
-        padding: 10px;
-        text-align: center;
     }
 
     main > .container > .card > h2{
@@ -105,8 +100,6 @@
 
     main > .container > .card > p{
         font-size: 18px;
-        padding: 10px 15px;
-        width: 90%;
     }
 
     main > .container > .card > .container-app > img{
@@ -128,9 +121,6 @@
 
     main > .container > .card > h1{
         font-size: 52px;
-        width: 90%;
-        padding: 10px 15px;
-        text-align: center;
     }
 
     main > .container > .card > h2{
@@ -138,10 +128,7 @@
     }
 
     main > .container > .card > p{
-        width: 95%;
         font-size: 18px;
-        margin: 20px 0px;
-        padding: 10px 15px;
     }
 
     main > .container > .card > .container-app > img{
