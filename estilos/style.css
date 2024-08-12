@@ -53,26 +53,38 @@ header > .Menu-Header{
     display: flex;
     align-items: center;
     background-color: var(--corSecundaria);
-    font-weight: 900;
 }
 
-header > .Menu-Header > a{
-    flex: auto;
+header > .Menu-Header > ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+header > .Menu-Header > ul > li{
+    flex-grow: 1;
     text-align: center;
     text-decoration: none;
-    padding: 15px 10px;
     text-shadow: 1px 0px 2px var(--corBase);
 }
 
-header > .Menu-Header > a:hover{
+header > .Menu-Header > ul > li > a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 900;
+}
+
+header > .Menu-Header > ul > li > a:hover{
     background-color: var(--corBase);
-    transition-duration: .9s;
+    transition-duration: .5s;
 }
 
 main{
     background-color: var(--corBase);
     width: 100%;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .logo_buspass{
@@ -92,10 +104,10 @@ main > .container > .card{
     margin: 0px auto;
 }
 
-main > .container > .card > picture > img, 
-main#sobre > .container > .card > picture > img{
+main > .container > .card > picture > img{
     display: block;
     margin: auto;
+    transition: .3s;
 }
 
 main > .container > .card > h1{
@@ -189,7 +201,7 @@ main#cadastro > .container > .card > #form-cadastro > .campo-form{
 main#cadastro > .container > .card > #form-cadastro > .campo-form > input{
     display: block;
     width: 90%;
-    height: 30px;
+    height: 40px;
     margin: 10px auto;
     padding-left: 5px;
     color: black;
@@ -276,8 +288,8 @@ footer > .copyright > a:hover
 @media screen and (min-width: 900px) and (max-width: 1200px){
 
     main > .container > .card > picture > img{
-        width: 410px;
-        height: 320px;
+        width: 510px;
+        height: 420px;
     }
 
     main > .container > .card > h1{
@@ -303,8 +315,8 @@ footer > .copyright > a:hover
 @media screen and (min-width: 1200px){
 
     main > .container > .card > picture > img{
-        width: 510px;
-        height: 420px;
+        width: 580px;
+        height: 440px;
     }
 
     main > .container > .card > h1{
